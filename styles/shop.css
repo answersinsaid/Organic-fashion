@@ -1,0 +1,138 @@
+.shop {
+}
+
+.shop__title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 15%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop__container {
+    display: grid;
+    grid-template-columns: 410px 515px 515px 410px ;
+    grid-template-areas:
+        "plant-1  plant-2  plant-3  plant-4 ";
+    gap: 15px;
+    overflow: hidden;
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+}
+
+._plant-1 {
+    grid-area: plant-1;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+._plant-2 {
+    grid-area: plant-2;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+._plant-3 {
+    grid-area: plant-3;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+._plant-4 {
+    grid-area: plant-4;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+
+.shop__plant {}
+
+.shop__plant-img {
+    max-height: 528px;
+
+
+}
+.shop__image{
+    max-width: 1920px;
+
+}
+.shop__img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 1366px) {
+    .shop__title {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    .shop__container {
+        grid-template-columns: 290px 368px 368px 290px ;
+        gap: 15px;
+
+    }
+
+    ._plant-1 {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    ._plant-2 {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    ._plant-3 {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    ._plant-4 {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    
+}
+
+@media screen and (max-width: 992px) {
+    .shop__title {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    .shop__container {
+        grid-template-columns: 213px 269px 269px 213px ;
+        gap: 15px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 375px) {
+    .shop__title {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .shop__container {
+        grid-template-columns: 105px 133px 133px 105px ;
+        gap: 5px;
+        margin-bottom: 10px;
+
+    }
+}
