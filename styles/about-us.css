@@ -1,0 +1,212 @@
+.about-us {
+    max-width: 1920px;
+    padding: 0 150px 0 55px;
+    margin-bottom: 175px;
+}
+
+.about-us__container {
+    display: grid;
+    grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-1 item-3"
+        "item-1 item-4"
+        "item-1 item-5"
+        "item-1 item-5";
+    gap: 55px;
+    justify-content: space-between;
+}
+
+._about-item-1 {
+    grid-area: item-1;
+}
+
+._about-item-2 {
+    grid-area: item-2;
+}
+
+._about-item-3 {
+    grid-area: item-3;
+}
+
+._about-item-4 {
+    grid-area: item-4;
+}
+
+._about-item-5 {
+    grid-area: item-5;
+    width: max-content;
+}
+
+
+.about-us__img {
+    padding-top: 60px;
+    max-width: 624px;
+    height: 1073px;
+}
+
+.about-us__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 15%;
+    text-align: left;
+}
+
+.about-us__title-span {
+    display: flex;
+    padding-top: 50px;
+}
+
+.about-us__text {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: left;
+}
+
+.about-us__button {
+    padding: 22px 70px;
+    box-sizing: border-box;
+    border: 5px solid rgb(142, 154, 130);
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 15%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+    .about-us {
+        padding: 0 140px 0 35px;
+        margin-bottom: 175px;
+    }
+    .about-us__container {
+        grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-1 item-4"
+        "item-1 item-5";
+        justify-content:center;
+        gap: 35px;
+    }
+    .about-us__img {
+        padding-top: 0px;
+        max-width: 417px;
+        height: 716px;
+    }
+    .about-us__title {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: left;
+    }
+    .about-us__title-span {
+        display: inline-block;
+        padding-top: 0;
+        padding-left: 15px;
+    }
+    .about-us__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    ._about-item-5 {
+        width: max-content;
+        height: max-content;
+    }
+    .about-us__button {
+        box-sizing: content-box;
+        padding: 12px 30px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .about-us {
+        padding: 0 80px 0 25px;
+        margin-bottom: 50px;
+    }
+    .about-us__container {
+        grid-template-columns: 40% 60%;
+        grid-template-areas:
+        "item-1 item-2"
+        "item-1 item-3"
+        "item-1 item-4"
+        "item-1 item-5";
+        justify-content:center;
+        gap: 25px;
+    }
+    .about-us__img {
+        padding-top: 0px;
+        width: 100%;
+        align-self: center;
+
+    }
+  
+    .about-us__title-span {
+        padding-left: 10px;
+    }
+
+    .about-us__button {
+        box-sizing: content-box;
+        padding: 8px 26px;
+
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .about-us {
+        padding: 30px 40px 0 40px;
+        margin: 0 auto;
+    }
+    .about-us__container {
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "item-2"
+        "item-3"
+        "item-1"
+        "item-4"
+        "item-5";
+        justify-content:center;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-us__img {
+        padding-top: 0px;
+        max-width: 261px;
+        height: 286px;
+        margin: 0 auto;
+    }
+    .about-us__title {
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .about-us__title-span {
+        padding-left: 10px;
+    }
+    .about-us__text {
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+    }
+    ._about-item-5 {
+        width: 150px;
+        align-self: center;
+        margin: 0 auto;
+    }
+    .about-us__button {
+        box-sizing: content-box;
+        padding: 10px 20px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+}

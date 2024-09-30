@@ -1,0 +1,115 @@
+.collection {
+    max-width: 1920px;
+    padding: 0 90px;
+    height: 1000px;
+    background: linear-gradient(to bottom, transparent 50%, #dbdbdb 50%);
+}
+
+.collection__title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 15%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.collection__container {
+    display: flex;
+    flex: 1 0 33.3333%;
+    justify-content: center;
+    gap: 100px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.collection__image {
+    margin-bottom: 100px;
+}
+
+.collection__img {
+    max-width: 502px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.collection__text {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 1366px) {
+    .collection__title {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 100px;
+    }
+    .collection__container {
+        gap: 70px;
+    }
+    .collection__image {
+        margin-bottom: 60px;
+    }
+    .collection__img {
+        max-width: 338px;
+    }
+    .collection__text {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .collection {
+        padding: 0 45px;
+        height: 1000px;
+        background: linear-gradient(to bottom, transparent 50%, #dbdbdb 50%);
+    }
+    .collection__title {
+        margin-bottom: 80px;
+    }
+    .collection__container {
+        gap: 55px;
+    }
+    .collection__image {
+        margin-bottom: 50px;
+    }
+    .collection__img {
+        max-width: 261px;
+    }
+    .collection__text {
+        margin-bottom: 70px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .collection {
+        padding: 0;
+        height: 350px;
+        background: linear-gradient(to bottom, transparent 50%, #dbdbdb 50%);
+    }
+    .collection__title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 35px;
+    }
+    .collection__container {
+        gap: 30px;
+    }
+    .collection__image {
+        margin-bottom: 25px;
+    }
+    .collection__img {
+        max-width: 177px;
+    }
+    .collection__text {
+        font-size: 15px;
+        line-height: 19px;
+        margin-bottom: 60px;
+    }
+}
