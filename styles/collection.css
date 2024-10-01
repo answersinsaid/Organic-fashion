@@ -1,8 +1,10 @@
 .collection {
     max-width: 1920px;
     padding: 0 90px;
-    height: 1000px;
+    height: 100%;
     background: linear-gradient(to bottom, transparent 50%, #dbdbdb 50%);
+    padding-bottom: 100px;
+
 }
 
 .collection__title {
@@ -38,14 +40,12 @@
     font-weight: 400;
     line-height: 52px;
     text-align: center;
-    margin-bottom: 150px;
 }
 
 @media screen and (max-width: 1366px) {
     .collection__title {
         font-size: 32px;
         line-height: 42px;
-        margin-bottom: 100px;
     }
     .collection__container {
         gap: 70px;
@@ -59,14 +59,13 @@
     .collection__text {
         font-size: 32px;
         line-height: 42px;
-        margin-bottom: 130px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .collection {
-        padding: 0 45px;
-        height: 1000px;
+        padding: 0 45px 80px 45px;
+        height: 100%;
         background: linear-gradient(to bottom, transparent 50%, #dbdbdb 50%);
     }
     .collection__title {
@@ -81,15 +80,12 @@
     .collection__img {
         max-width: 261px;
     }
-    .collection__text {
-        margin-bottom: 70px;
-    }
 }
 
 
 @media screen and (max-width: 375px) {
     .collection {
-        padding: 0;
+        padding-bottom: 20px;
         height: 350px;
         background: linear-gradient(to bottom, transparent 50%, #dbdbdb 50%);
     }
@@ -110,6 +106,5 @@
     .collection__text {
         font-size: 15px;
         line-height: 19px;
-        margin-bottom: 60px;
     }
 }

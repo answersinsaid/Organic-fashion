@@ -24,6 +24,7 @@
 }
 
 ._plant-1 {
+    grid-area: plant-1;
     max-width: 100%;
     overflow: hidden;
     object-fit: cover;
@@ -32,16 +33,20 @@
 ._plant-2 {
     grid-area: plant-2;
     max-width: 100%;
+    overflow: hidden;
     object-fit: cover;
 }
 
 ._plant-3 {
+    grid-area: plant-3;
     max-width: 100%;
+    overflow: hidden;
     object-fit: cover;
     
 }
 
 ._plant-4 {
+    grid-area: plant-4;
     max-width: 100%;
     overflow: hidden;
     object-fit: cover;

@@ -1,13 +1,15 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 85px 190px 0 205px;
     gap: 50px;
     margin-bottom: 125px;
 }
 
-.header-logo {}
+.header-logo {
+    width: 50%;
+}
 
 .header-logo__title {
     font-size: 36px;
@@ -16,7 +18,9 @@
     text-align: left;
 }
 
-.header__nav {}
+.header__nav {
+    width: 50%;
+}
 
 .header__list {
     display: flex;
@@ -84,7 +88,7 @@
         justify-content: center;
     }
     .header__list {
-        gap: 30px;
+        gap: 10px;
     }
 }
 
@@ -109,8 +113,9 @@
 @media screen and (max-width: 375px) {
     .header {
         padding: 15px 15px 0 30px;
-        gap: 25px;
+        gap: 0px;
         margin-bottom: 35px;
+        justify-content: space-between;
     }
     .header-logo__title {
         font-size: 16px;
